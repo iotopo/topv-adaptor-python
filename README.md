@@ -2,15 +2,30 @@
 
 这是 TopV Adaptor 的 Python 实现版本，使用 Python 内置的 `http.server` 模块，无需外部 Web 框架。
 
-## 功能特性
+## 接口实现
 
-- 实时数据查询 (`/api/find_last`)
-- 数据设置 (`/api/set_value`)
-- 历史数据查询 (`/api/query_history`)
-- 测点标签查询 (`/api/query_points`)
-- 设备标签查询 (`/api/query_devices`)
-- NATS 实时数据推送
-- 健康检查 (`/health`)
+1. 推送接口
+
+   **基于 NATS 推送实时数据** - 自动推送模拟数据到 NATS
+
+2. 实时数据接口
+
+​	HTTP 接口实现 - `GET /api/find_last`
+
+3. 历史数据接口
+
+​	HTTP 接口实现 - `POST /api/query_history`
+
+4. 标签接口
+
+   * 查询设备标签  - `GET /api/query_devices`
+
+   * 查询测点标签  - `GET /api/query_points`
+
+
+5. 反写接口
+
+​	HTTP 接口实现 - `POST /api/set_value`
 
 ## 安装依赖
 
