@@ -10,11 +10,11 @@
 
 2. 实时数据接口
 
-​	HTTP 接口实现 - `GET /api/find_last`
+	HTTP 接口实现 - `GET /api/find_last`
 
 3. 历史数据接口
 
-​	HTTP 接口实现 - `POST /api/query_history`
+	HTTP 接口实现 - `POST /api/query_history`
 
 4. 标签接口
 
@@ -25,7 +25,7 @@
 
 5. 反写接口
 
-​	HTTP 接口实现 - `POST /api/set_value`
+	HTTP 接口实现 - `POST /api/set_value`
 
 ## 安装依赖
 
